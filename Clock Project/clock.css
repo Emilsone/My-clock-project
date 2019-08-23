@@ -1,0 +1,52 @@
+body{
+background-image: url("images.png");
+background: linear-gradient(rgba(19, 19, 19, 0.8),rgba(19, 19, 19, 0.8)), ;
+background-size: cover;
+background-repeat: no-repeat;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-size:14px;
+}
+
+.analog-clock{
+    width:150px;
+    height:150px;
+    margin-top: 200px;
+    background-color:black;
+    border-radius: 19px;
+    background: linear-gradient(rgba(19, 19, 19, 0.8),rgba(19, 19, 19, 0.8));
+}
+#clock-face{
+    stroke:black;
+    stroke-width:2px;
+    fill:white;
+}
+
+#h-hand, #m-hand, #s-hand, #s-tail{
+    stroke:black;
+    stroke-linecap:round;
+}
+
+#h-hand{
+    stroke-width:3px;
+}
+
+#m-hand{
+    stroke-width:2px;
+}
+
+#s-hand{
+    stroke-width:1px;
+}
+
+.time-text{
+    text-align:center;
+    margin-top: 15px;
+}
+#by{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 10px
+}

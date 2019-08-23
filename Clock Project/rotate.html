@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<style>
+    #on {
+        width: 100px;
+        margin-top: 50px;
+        height: 45px;
+        background-color: black;
+        color:white;
+    }
+    #myFan{
+        margin-top: 20px;
+    }
+    #myFan:hover{
+        background-color: whitesmoke;
+        color: black;
+    }
+</style>
+
+<body>
+    <center>
+        <img id="myFan" src="download.jpg" width="200" heigh="100"><br>
+        <button id="on" onclick="turnOn()"> On </button><br>
+    </center>
+
+</body>
+<script>
+    let timer;
+    let turn = 0;
+    function turnOn() {
+        timer = setInterval(turnFan, 200);
+        let x = document.getElementById("on");
+        x.disabled = true;
+    }
+
+
+    function turnFan() {
+        let x = document.getElementById("myFan");
+        turn += 60;
+        x.style.transform = "rotate(" + (turn % 360) + "deg)"
+    }
+</script>
+
+</html>
